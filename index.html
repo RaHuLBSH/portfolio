@@ -140,6 +140,11 @@
   .proj-name{font-size:18px;font-weight:750;letter-spacing:-0.01em;}
   .proj-desc{font-family:var(--mono);font-size:13.5px;color:var(--muted);line-height:1.85;margin-bottom:18px;}
   .proj-tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .proj-actions{margin-top:18px;display:flex;align-items:center;gap:10px;}
+  .proj-cta{font-family:var(--mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:10px 16px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:not-allowed;transition:all 0.2s;}
+  .proj-cta[disabled]{opacity:0.55;}
+  .proj-cta--active{background:rgba(123,97,255,0.14);border-color:rgba(123,97,255,0.35);color:#d8ccff;cursor:pointer;}
+  .proj-cta--active:hover{transform:translateY(-1px);border-color:#a78fff;box-shadow:0 10px 24px rgba(123,97,255,0.18);}
   .tag{font-family:var(--mono);font-size:10px;letter-spacing:0.04em;padding:4px 10px;border-radius:4px;background:var(--surface2);color:var(--muted);border:1px solid var(--border);}
   .tag.a{background:rgba(0,229,160,0.1);color:var(--accent);border-color:rgba(0,229,160,0.2);}
   .tag.p{background:rgba(123,97,255,0.1);color:#a78fff;border-color:rgba(123,97,255,0.2);}
@@ -281,6 +286,11 @@
       <div class="proj-tags">
         <span class="tag p">Agentic AI</span><span class="tag p">LangGraph</span><span class="tag">LangChain</span><span class="tag">Python</span><span class="tag">LLM</span>
       </div>
+      <div class="proj-actions">
+        <a href="https://learningaiagent.onrender.com/" target="_blank">
+        <button type="button" class="proj-cta proj-cta--active" title="POC for the implementation of concept">Try it out</button>
+        </a>
+      </div>
     </div>
 
     <div class="proj-card c-green">
@@ -294,6 +304,9 @@
       <p class="proj-desc">ML-based image classification for driver behaviour detection using YOLO and Roboflow. Trained on diverse datasets for real-world edge cases, exported to ONNX for deployment in an Express.js backend.</p>
       <div class="proj-tags">
         <span class="tag a">YOLO</span><span class="tag a">ONNX</span><span class="tag">Roboflow</span><span class="tag">Python</span><span class="tag">Express.js</span>
+      </div>
+      <div class="proj-actions">
+        <button type="button" class="proj-cta" disabled>Try it out</button>
       </div>
     </div>
 
@@ -309,6 +322,9 @@
       <div class="proj-tags">
         <span class="tag o">Twilio</span><span class="tag o">Whisper</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">STT / TTS</span>
       </div>
+      <div class="proj-actions">
+        <button type="button" class="proj-cta" disabled>Try it out</button>
+      </div>
     </div>
 
     <div class="proj-card c-blue">
@@ -322,6 +338,9 @@
       <p class="proj-desc">Full-stack mobile platform with React frontend and Django backend for PPF warranty claim management. AI-based image processing analyses warranty documents and generates confidence scores for claim verification.</p>
       <div class="proj-tags">
         <span class="tag b">React</span><span class="tag b">Django</span><span class="tag">PostgreSQL</span><span class="tag">AI Vision</span><span class="tag">REST API</span>
+      </div>
+      <div class="proj-actions">
+        <button type="button" class="proj-cta" disabled>Try it out</button>
       </div>
     </div>
 
